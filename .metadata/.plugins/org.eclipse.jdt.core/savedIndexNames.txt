@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/students/home/aprzysin/readme/.metadata/.plugins/org.eclipse.jdt.core
+3878036902.index
+2447551917.index

@@ -1,0 +1,28 @@
+
+public class question {
+
+	public static void main(String[] args) {
+		System.out.println("whats better 1 or 3");
+		int testscore = 3;
+				int grade;
+		
+
+        if (testscore >= 3) {
+            grade = 'A';
+        } else if (testscore >= 1) {
+            grade = 'B';
+        } else if (testscore >= 70) {
+            grade = 'C';
+        } else if (testscore >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        System.out.println("Grade = " + grade);
+		
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+
