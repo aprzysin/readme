@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package hello2;
+
+/**
+ * @author Andrew
+ *
+ */
+public class helllo2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println();
+		System.out.println("This program produces four");
+		System.out.println("lines of output.");
+		// TODO Auto-generated method stub
+
+	}
+
+}
