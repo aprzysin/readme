@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package chpt1_1;
+
+/**
+ * @author Andrew
+ *
+ */
+public class chpt11class {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		for ( int i = 1; i <= 10; i++) {
+			for (int x = 1; x <= i; x++) {
+				final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+			    executorService.scheduleAtFixedRate(App::myTask, 0, 1, TimeUnit.SECONDS);
+			System.out.print(i);
+		}
+			System.out.println();
+	}
+		// TODO Auto-generated method stub
+
+	}
+
+}
