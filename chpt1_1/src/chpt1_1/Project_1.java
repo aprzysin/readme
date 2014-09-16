@@ -14,42 +14,42 @@ public class Project_1 {
 	 */
 	public static void main(String[] args) {
 		// @see Book Pg 34
-		prestigeCalc();
+		prestigeCalculator();
 	  
 		// TODO Auto-generated method stub
 	}
 	/** 
 	 * @see Book Pg 34 
 	 */
-	public static void prestigeCalc() {
+	public static void prestigeCalculator() {
 		// declare variables
-		int currentexp;
-		int currentprestige;
-		int prestigegoal;
-		int exptillprestige;
-		int exptillprestigegoal;
+		int currentExp;
+		int currentPrestige;
+		int prestigeGoal;
+		int expTillPrestige;
+		int expTillPrestigeGoal;
 		  
 		//user input
 		/**
 		 * @see Book Pg 77
 		 */
-		currentexp = 1000000;
-		currentprestige = 3;
-		prestigegoal = 5;
+		currentExp = 1000000;
+		currentPrestige = 3;
+		prestigeGoal = 5;
 		//compute
-		exptillprestige = 1202800 - currentexp;
-		exptillprestigegoal = (1202800*prestigegoal) - (1202800*currentprestige) - currentexp;
+		expTillPrestige = 1202800 - currentExp;
+		expTillPrestigeGoal = (1202800*prestigeGoal) - (1202800*currentPrestige) - currentExp;
 		  
 		//print results
 		/**
 		 * @see Book Pg 9
 		 */
 		System.out.print("Exp Needed To Pretige: ");
-		System.out.println(exptillprestige);
+		System.out.println(expTillPrestige);
 		System.out.print("Exp Needed For Pretige Level ");
-		System.out.print(prestigegoal);
+		System.out.print(prestigeGoal);
 		System.out.print(": ");
-		System.out.print(exptillprestigegoal);
+		System.out.print(expTillPrestigeGoal);
 
 }
 }
