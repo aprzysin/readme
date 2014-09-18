@@ -35,7 +35,7 @@ public class chpt3test {
 		
 		double answer2 = bigNumber + exponet;
 		
-		System.out.println(answer2);
+		System.out.println(answer);
 		
 		
 		}
