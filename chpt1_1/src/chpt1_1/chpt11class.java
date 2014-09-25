@@ -24,7 +24,6 @@ public class chpt11class {
 			System.out.print(n);
 			System.out.print(i);
 			System.out.print(",");
-			
 		}
 			System.out.println();
 	}

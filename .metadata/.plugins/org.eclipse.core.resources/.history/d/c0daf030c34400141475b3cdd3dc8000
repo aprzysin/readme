@@ -1,0 +1,56 @@
+import java.util.Scanner; // for Scanner
+
+/**
+ * @author Andrew
+ *
+ */
+public class DogFinder {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner console = new Scanner(System.in);
+		// Question info and first question
+		System.out.println("What dog are you!?!?!?");
+		System.out.println("Answer these questions to find out");
+		System.out.println("Answer with a 1,2,3 or 4");
+		System.out.println("Which vehicle do you like the best?");
+		System.out.println("1. Car");
+		System.out.println("2. SUV");
+		System.out.println("3. Pickup Truck");
+		System.out.println("4. Monster Truck");
+		// input of the first question
+		int question1 = console.nextInt();
+		System.out.println("Which animal do you prefer?");
+		System.out.println("1. Rat");
+		System.out.println("2. Lemur");
+		System.out.println("3. Wolf");
+		System.out.println("4. Hippo");
+		int question2 = console.nextInt();
+		System.out.println("Which device do you like the best?");
+		System.out.println("1. Mini-Tablet");
+		System.out.println("2. Tablet");
+		System.out.println("3. Laptop");
+		System.out.println("4. Computer");
+		int question3 = console.nextInt();
+		questionResults(question1, question2, question3);
+	}
+
+	public static void questionResults(int question1, int question2, int question3) {
+		int finalResults = question1 + question2 + question3;
+		// If statement that determines what kind of dog the user is
+		if (5 < finalResults && 8 > finalResults) {
+			System.out.println("You are a Poodle!");
+		}	else if (9 <= finalResults && 12 >= finalResults) {
+			System.out.println("You are a Husky!");
+		}	else if (13 <= finalResults && 16 >= finalResults) {
+			System.out.println("You are an Alaskan Malamute!");
+		}	else if (17 <= finalResults && 20 >= finalResults) {
+			System.out.println("You are a Great Dane!");
+		}	else {
+				System.out.println("You are a mutt!");	
+		}
+	}
+}
