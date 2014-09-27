@@ -59,37 +59,28 @@ public class DogFinder {
 		// retrieves and prints the questionnaire results
 		questionResults(question1, question2, question3, question4, question5);
 	}
-
-	/**
-	 * Adds the question values and computes it into what dog the user is and prints that result
-	 * 
-	 * @param question1
-	 * 					The question 1 value
-	 * @param question2
-	 * 					The question 2 value
-	 * @param question3
-	 * 					The question 3 value
-	 * @param question4 
-	 * 					The question 4 value
-	 * @param question5
-	 * 					The question 5 value
-	 */
-	public static void questionResults(int question1, int question2,
-			int question3, int question4, int question5) {
+/**
+ * 
+ * @param question1
+ * @param question2
+ * @param question3
+ * @param question4
+ * @param question5
+ */
+	public static void questionResults(int question1, int question2, int question3, int question4, int question5) {
 		// adding the results of the questionnaire
-		int finalResults = question1 + question2 + question3 + question4
-				+ question5;
+		int finalResults = question1 + question2 + question3 + question4 + question5;
 		// determines and prints what kind of dog the user is
 		if (5 <= finalResults && 8 >= finalResults) {
 			System.out.println("You are a Poodle!");
-		} else if (9 <= finalResults && 12 >= finalResults) {
+		}	else if (9 <= finalResults && 12 >= finalResults) {
 			System.out.println("You are a Husky!");
-		} else if (13 <= finalResults && 16 >= finalResults) {
+		}	else if (13 <= finalResults && 16 >= finalResults) {
 			System.out.println("You are an Alaskan Malamute!");
-		} else if (17 <= finalResults && 20 >= finalResults) {
+		}	else if (17 <= finalResults && 20 >= finalResults) {
 			System.out.println("You are a Great Dane!");
-		} else {
-			System.out.println("You are a mutt!");
+		}	else {
+				System.out.println("You are a mutt!");	
 		}
 	}
 }
