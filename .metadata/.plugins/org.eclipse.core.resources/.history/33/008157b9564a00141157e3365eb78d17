@@ -29,11 +29,9 @@ public class Project_3 {
 			if (console.hasNextInt()) {
 				question1 = console.nextInt();
 				if (question1 <= 0 || question1 > 4) {
-					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
