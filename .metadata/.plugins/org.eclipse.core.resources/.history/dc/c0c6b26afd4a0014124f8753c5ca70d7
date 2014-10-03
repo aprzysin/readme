@@ -4,7 +4,7 @@ import java.util.Scanner; // for Scanner
  * @author Andrew
  *
  */
-public class DogFinder {
+public class Project_3 {
 
 	/**
 	 * @param args
@@ -23,7 +23,21 @@ public class DogFinder {
 		System.out.println("3. Pickup Truck");
 		System.out.println("4. Monster Truck");
 		// input of the first question
-		int question1 = console.nextInt();
+		int question1 = 0;
+		while (question1 <= 0 || question1 > 4) {
+			//prompt user for input
+			if (console.hasNextInt()) {
+				question1 = console.nextInt();
+				if (question1 <= 0 || question1 > 4) {
+					//response if the input isn't in the right range
+					System.out.println("Enter 1, 2, 3, 4");
+				}
+			} else {
+				//response if the input isn't an integer
+				System.out.println("Enter 1, 2, 3, 4");
+				console.next();
+			}
+		}
 		// second question
 		System.out.println("Which animal do you prefer?");
 		System.out.println("1. Rat");
@@ -61,12 +75,18 @@ public class DogFinder {
 	}
 
 	/**
+	 * Adds the question values and computes it into what dog the user is and prints that result
 	 * 
 	 * @param question1
+	 * 					The question 1 value
 	 * @param question2
+	 * 					The question 2 value
 	 * @param question3
-	 * @param question4
+	 * 					The question 3 value
+	 * @param question4 
+	 * 					The question 4 value
 	 * @param question5
+	 * 					The question 5 value
 	 */
 	public static void questionResults(int question1, int question2,
 			int question3, int question4, int question5) {

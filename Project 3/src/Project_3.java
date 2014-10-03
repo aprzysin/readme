@@ -45,7 +45,21 @@ public class Project_3 {
 		System.out.println("3. Wolf");
 		System.out.println("4. Hippo");
 		// input of the second question
-		int question2 = console.nextInt();
+		int question2 = 0;
+		while (question2 <= 0 || question2 > 4) {
+			//prompt user for input
+			if (console.hasNextInt()) {
+				question2 = console.nextInt();
+				if (question2 <= 0 || question2 > 4) {
+					//response if the input isn't in the right range
+					System.out.println("Enter 1, 2, 3, 4");
+				}
+			} else {
+				//response if the input isn't an integer
+				System.out.println("Enter 1, 2, 3, 4");
+				console.next();
+			}
+		}
 		// third question
 		System.out.println("Which device do you like the best?");
 		System.out.println("1. Mini-Tablet");
@@ -53,7 +67,21 @@ public class Project_3 {
 		System.out.println("3. Laptop");
 		System.out.println("4. Computer");
 		// input of the third question
-		int question3 = console.nextInt();
+		int question3 = 0;
+		while (question3 <= 0 || question3 > 4) {
+			//prompt user for input
+			if (console.hasNextInt()) {
+				question3 = console.nextInt();
+				if (question3 <= 0 || question3 > 4) {
+					//response if the input isn't in the right range
+					System.out.println("Enter 1, 2, 3, 4");
+				}
+			} else {
+				//response if the input isn't an integer
+				System.out.println("Enter 1, 2, 3, 4");
+				console.next();
+			}
+		}
 		// fourth question
 		System.out.println("Which gun do you prefer?");
 		System.out.println("1. Glock");
@@ -61,7 +89,21 @@ public class Project_3 {
 		System.out.println("3. AK-47");
 		System.out.println("4. M249");
 		// input of the fourth question
-		int question4 = console.nextInt();
+		int question4 = 0;
+		while (question4 <= 0 || question4 > 4) {
+			//prompt user for input
+			if (console.hasNextInt()) {
+				question4 = console.nextInt();
+				if (question4 <= 0 || question4 > 4) {
+					//response if the input isn't in the right range
+					System.out.println("Enter 1, 2, 3, 4");
+				}
+			} else {
+				//response if the input isn't an integer
+				System.out.println("Enter 1, 2, 3, 4");
+				console.next();
+			}
+		}
 		// fifth question
 		System.out.println("Which toy do you prefer?");
 		System.out.println("1. Rubik's Cube");
@@ -69,7 +111,21 @@ public class Project_3 {
 		System.out.println("3. Mountain Bike");
 		System.out.println("4. Bounce House");
 		// input of the fifth question
-		int question5 = console.nextInt();
+		int question5 = 0;
+		while (question5 <= 0 || question5 > 4) {
+			//prompt user for input
+			if (console.hasNextInt()) {
+				question5 = console.nextInt();
+				if (question5 <= 0 || question5 > 4) {
+					//response if the input isn't in the right range
+					System.out.println("Enter 1, 2, 3, 4");
+				}
+			} else {
+				//response if the input isn't an integer
+				System.out.println("Enter 1, 2, 3, 4");
+				console.next();
+			}
+		}
 		// retrieves and prints the questionnaire results
 		questionResults(question1, question2, question3, question4, question5);
 	}
