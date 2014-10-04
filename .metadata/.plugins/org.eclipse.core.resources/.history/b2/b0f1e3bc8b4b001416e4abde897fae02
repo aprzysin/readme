@@ -25,15 +25,15 @@ public class Project_3 {
 		// input of the first question
 		int question1 = 0;
 		while (question1 <= 0 || question1 > 4) {
+			//prompt user for input
 			if (console.hasNextInt()) {
-				// prompt user for input
 				question1 = console.nextInt();
 				if (question1 <= 0 || question1 > 4) {
-					// response if the input isn't in the right range
+					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				// response if the input isn't an integer
+				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
@@ -47,15 +47,15 @@ public class Project_3 {
 		// input of the second question
 		int question2 = 0;
 		while (question2 <= 0 || question2 > 4) {
+			//prompt user for input
 			if (console.hasNextInt()) {
-				// prompt user for input
 				question2 = console.nextInt();
 				if (question2 <= 0 || question2 > 4) {
-					// response if the input isn't in the right range
+					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				// response if the input isn't an integer
+				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
@@ -69,15 +69,15 @@ public class Project_3 {
 		// input of the third question
 		int question3 = 0;
 		while (question3 <= 0 || question3 > 4) {
+			//prompt user for input
 			if (console.hasNextInt()) {
-				// prompt user for input
 				question3 = console.nextInt();
 				if (question3 <= 0 || question3 > 4) {
-					// response if the input isn't in the right range
+					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				// response if the input isn't an integer
+				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
@@ -91,15 +91,15 @@ public class Project_3 {
 		// input of the fourth question
 		int question4 = 0;
 		while (question4 <= 0 || question4 > 4) {
+			//prompt user for input
 			if (console.hasNextInt()) {
-				// prompt user for input
 				question4 = console.nextInt();
 				if (question4 <= 0 || question4 > 4) {
-					// response if the input isn't in the right range
+					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				// response if the input isn't an integer
+				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
@@ -113,15 +113,15 @@ public class Project_3 {
 		// input of the fifth question
 		int question5 = 0;
 		while (question5 <= 0 || question5 > 4) {
+			//prompt user for input
 			if (console.hasNextInt()) {
-				// prompt user for input
 				question5 = console.nextInt();
 				if (question5 <= 0 || question5 > 4) {
-					// response if the input isn't in the right range
+					//response if the input isn't in the right range
 					System.out.println("Enter 1, 2, 3, 4");
 				}
 			} else {
-				// response if the input isn't an integer
+				//response if the input isn't an integer
 				System.out.println("Enter 1, 2, 3, 4");
 				console.next();
 			}
@@ -131,19 +131,18 @@ public class Project_3 {
 	}
 
 	/**
-	 * Adds the question values and computes it into what dog the user is and
-	 * prints that result
+	 * Adds the question values and computes it into what dog the user is and prints that result
 	 * 
 	 * @param question1
-	 *            The question 1 value
+	 * 					The question 1 value
 	 * @param question2
-	 *            The question 2 value
+	 * 					The question 2 value
 	 * @param question3
-	 *            The question 3 value
-	 * @param question4
-	 *            The question 4 value
+	 * 					The question 3 value
+	 * @param question4 
+	 * 					The question 4 value
 	 * @param question5
-	 *            The question 5 value
+	 * 					The question 5 value
 	 */
 	public static void questionResults(int question1, int question2,
 			int question3, int question4, int question5) {
