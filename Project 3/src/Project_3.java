@@ -159,8 +159,6 @@ public class Project_3 {
 			System.out.println("You are an Alaskan Malamute!");
 		} else if (17 <= finalResults && 20 >= finalResults) {
 			System.out.println("You are a Great Dane!");
-		} else {
-			System.out.println("You are a mutt!");
 		}
 	}
 }
