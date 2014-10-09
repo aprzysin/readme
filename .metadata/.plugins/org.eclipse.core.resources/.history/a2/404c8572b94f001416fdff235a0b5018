@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+
+/**
+ * @author Andrew
+ *
+ */
+import java.io.*;
+import java.util.*;
+
+public class Project4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner fileReader = new Scanner(new File("src/input.txt"));
+		while (fileReader.hasNextLine()) {
+			processLine(fileReader.nextLine());
+		System.out.println(fileReader.next());
+		System.out.println(fileReader.next());
+		System.out.println(fileReader.next());
+		System.out.println(fileReader.nextInt());
+		}
+
+		}
+	public static void processLine(String line) {
+		Scanner lineProcessor = new Scanner(line);
+		System.out.println(lineProcessor.next());
+		System.out.println(lineProcessor.next());
+		System.out.println(lineProcessor.next());
+		System.out.println(lineProcessor.nextInt());
+	}
+		// TODO Auto-generated method stub
+
+	}
+
+
