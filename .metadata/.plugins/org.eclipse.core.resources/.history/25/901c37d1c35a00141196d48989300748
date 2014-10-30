@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+
+/**
+ * @author Andrew
+ *
+ */
+import java.io.*;
+import java.util.*;
+import java.io.FileNotFoundException;
+
+public class Project_5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		Data mydata = new Data(1,2,3);
+		System.out.println(mydata);
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
