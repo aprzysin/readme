@@ -8,28 +8,35 @@ public class Data {
 	private double playerRank;
 	// variable to track the players score
 	private double playerScore;
-	// Constructor
-	public Data(double startPlayerRank, double startPlayerScore) throws FileNotFoundException  {
-		// creates a file input.txt in src and creates a scanner to read this
-		// file
-		//seperate to the parser Scanner fileReader = new Scanner(new File("src/blackops.txt"));
-		//Scanner fileReader = new Scanner(new File("src/input.txt"));
-		//startPlayerRank = fileReader.nextDouble();
-		//startPlayerScore = fileReader.nextDouble();
+
+	/**
+	 * 
+	 * @param startPlayerRank - variable used in the constructor to represent the player's rank
+	 * @param startPlayerScore - variable used in the constructor to represent the player's score
+	 * @throws FileNotFoundException - makes the program not crash if a file is not found
+	 */
+	public Data(double startPlayerRank, double startPlayerScore)
+			throws FileNotFoundException {
 		
+		// makes the playerRank variable equal to startPlayerRank
 		this.playerRank = startPlayerRank;
-		this.playerScore = startPlayerScore;}
-		//while (fileReader.hasNext()) {
-		//	fileReader.nextDouble();
-		//	fileReader.nextDouble();
+		// makes the playerScore variable equal to startPlayerScore
+		this.playerScore = startPlayerScore;
+	}
 
 
-		//}
-
+	/**
+	 * 
+	 * @return - returns the value of this.playerScore for Server.java to use
+	 */
 	public double playerScore() {
 		// TODO Auto-generated method stub
 		return this.playerScore;
 	}
+	/**
+	 * 
+	 * @return - returns the value of this.playerRank for Server.java to use
+	 */
 	public double playerRank() {
 		// TODO Auto-generated method stub
 		return this.playerRank;

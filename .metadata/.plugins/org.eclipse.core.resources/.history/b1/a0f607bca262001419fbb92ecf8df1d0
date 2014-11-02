@@ -8,20 +8,31 @@ public class Data {
 	private double playerRank;
 	// variable to track the players score
 	private double playerScore;
-	
+	// Constructor
 	public Data(double startPlayerRank, double startPlayerScore) throws FileNotFoundException  {
 		// creates a file input.txt in src and creates a scanner to read this
 		// file
 		//seperate to the parser Scanner fileReader = new Scanner(new File("src/blackops.txt"));
-		startPlayerRank = fileReader.nextDouble();
-		startPlayerScore = fileReader.nextDouble();
+		//Scanner fileReader = new Scanner(new File("src/input.txt"));
+		//startPlayerRank = fileReader.nextDouble();
+		//startPlayerScore = fileReader.nextDouble();
 		
 		this.playerRank = startPlayerRank;
-		this.playerScore = startPlayerScore;
-		
+		this.playerScore = startPlayerScore;}
+		//while (fileReader.hasNext()) {
+		//	fileReader.nextDouble();
+		//	fileReader.nextDouble();
 
+
+		//}
+
+	public double playerScore() {
+		// TODO Auto-generated method stub
+		return this.playerScore;
 	}
-	public Double toArray() {
-	return this.playerRank + this.playerScore;
-}
+	public double playerRank() {
+		// TODO Auto-generated method stub
+		return this.playerRank;
+	}
+
 }

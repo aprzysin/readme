@@ -4,60 +4,86 @@ import java.util.Scanner;
 
 /**
  * 
- * @author Andrew
+ * @author Andrew Przysinda
  *
  */
 public class Server {
-	// declare datas array from Data.java for the values in blackops.txt
+	// declares the array datas
 	private Data[] datas;
-	//declare file for the file path src/blackops
+	// declares the array file
 	private File file;
+
 	/**
 	 * 
 	 * @param filePath
-	 * @throws FileNotFoundException
+	 *            - the path to the file that is being read (src/blackops in
+	 *            this case)
+	 * @throws FileNotFoundException - makes the program not crash if a file is not found
 	 */
-	public void load(String filePath) throws FileNotFoundException  {
+	public void load(String filePath) throws FileNotFoundException {
+		// adds the file path into the file array
 		this.file = new File(filePath);
+		// makes the datas array to have the same amount of array values as the amount of lines in blackops
 		this.datas = new Data[this.numLines()];
+		// scanner for reading the file info
 		Scanner fileReader = new Scanner(this.file);
+		// variable to represent the amount of lines
 		int i = 0;
+		// reads all the lines and puts them into the datas array
 		while (fileReader.hasNext()) {
-			this.datas[i] = new Data(fileReader.nextDouble(), fileReader.nextDouble());
+		// reads one line and adds it to the datas array
+			this.datas[i] = new Data(fileReader.nextDouble(),
+					fileReader.nextDouble());
+		// adds one to i to switch the array value
 			i++;
 		}
 	}
+
 	/**
 	 * 
-	 * @return
+	 * @return - returns the amount of lines
 	 * @throws FileNotFoundException
 	 */
-	private int numLines() throws FileNotFoundException  {
+	private int numLines() throws FileNotFoundException {
+		// scanner for reading the file info
 		Scanner lineReader = new Scanner(this.file);
-		int lines  = 0;
+		// varible that represents the amount of lines in blackops 
+		int lines = 0;
+		// determines the amount of lines in blackops
 		while (lineReader.hasNextLine()) {
+			// reads a line in blackops
 			lineReader.nextLine();
+			// adds one to lines to find the amount of lines
 			lines++;
 		}
 		return lines;
 	}
+	// variable that represents all the scores added up
 	double totalScore = 0.0;
+	// variable that represents all the ranks added up
 	double totalRank = 0.0;
+
 	/**
 	 * 
-	 * @throws FileNotFoundException
+	 * @throws FileNotFoundException - makes the program not crash if a file is not found
 	 */
 	public void analyze() throws FileNotFoundException {
-
+		// adds all the variable values up in the datas array and equals this value to a more universal variables
 		for (Data d : datas) {
+			// adds one of the datas array values for playerScore to totalScore
 			totalScore += d.playerScore();
+			// adds one of the datas array values for playerRank to totalRank
 			totalRank += d.playerRank();
-			
+
 		}
-		System.out.println("Total Amount Of The Player's Scores: " + totalScore);
-		System.out.println("Average Player Score: " + totalScore / datas.length);
+		// displays the total amount of the player's score
+		System.out
+				.println("Total Amount Of The Player's Scores: " + totalScore);
+		// calculates and displays the average player score
+		System.out
+				.println("Average Player Score: " + totalScore / datas.length);
+		// calculates and displays the average player rank
 		System.out.println("Average Player Rank: " + totalRank / datas.length);
 	}
-	
 
 }
