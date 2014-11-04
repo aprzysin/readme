@@ -2,7 +2,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-// should be player info w/o scanner that should be parser also should find the # of lines
+/**
+ * A class which represents the player info from the filePath file
+ * 
+ * @author Andrew
+ *
+ */
 public class Data {
 	// variable to track the players rank
 	private double playerRank;
@@ -10,6 +15,8 @@ public class Data {
 	private double playerScore;
 
 	/**
+	 * Constructor function. Sets the starting values based on the provided
+	 * values
 	 * 
 	 * @param startPlayerRank
 	 *            - variable used in the constructor to represent the player's
@@ -30,8 +37,9 @@ public class Data {
 	}
 
 	/**
+	 * A method to convert this object into a string
 	 * 
-	 * @return - returns the value of this.playerScore for Server.java to use
+	 * @return String from the stringified object
 	 */
 	public double playerScore() {
 		// TODO Auto-generated method stub
@@ -39,8 +47,9 @@ public class Data {
 	}
 
 	/**
+	 * A method to convert this object into a sting
 	 * 
-	 * @return - returns the value of this.playerRank for Server.java to use
+	 * @return String from the stringified object
 	 */
 	public double playerRank() {
 		// TODO Auto-generated method stub

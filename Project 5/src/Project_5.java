@@ -1,16 +1,10 @@
-/**
- * 
- */
-
-/**
- * @author Andrew
- *
- */
 import java.io.*;
 import java.util.*;
 import java.io.FileNotFoundException;
 
 /**
+ * A program to process an input file of player ranks and scores and analyze the
+ * data with calculations
  * 
  * @author Andrew Przysinda
  *
