@@ -11,10 +11,10 @@
 		<item value="134" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="SaveAsDialogSettings">
-		<item value="700" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="642" key="DIALOG_HEIGHT"/>
-		<item value="195" key="DIALOG_X_ORIGIN"/>
-		<item value="78" key="DIALOG_Y_ORIGIN"/>
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="580" key="DIALOG_HEIGHT"/>
+		<item value="69" key="DIALOG_X_ORIGIN"/>
+		<item value="222" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -11,19 +11,23 @@ public class Data {
 
 	/**
 	 * 
-	 * @param startPlayerRank - variable used in the constructor to represent the player's rank
-	 * @param startPlayerScore - variable used in the constructor to represent the player's score
-	 * @throws FileNotFoundException - makes the program not crash if a file is not found
+	 * @param startPlayerRank
+	 *            - variable used in the constructor to represent the player's
+	 *            rank
+	 * @param startPlayerScore
+	 *            - variable used in the constructor to represent the player's
+	 *            score
+	 * @throws FileNotFoundException
+	 *             - makes the program not crash if a file is not found
 	 */
 	public Data(double startPlayerRank, double startPlayerScore)
 			throws FileNotFoundException {
-		
+
 		// makes the playerRank variable equal to startPlayerRank
 		this.playerRank = startPlayerRank;
 		// makes the playerScore variable equal to startPlayerScore
 		this.playerScore = startPlayerScore;
 	}
-
 
 	/**
 	 * 
@@ -33,6 +37,7 @@ public class Data {
 		// TODO Auto-generated method stub
 		return this.playerScore;
 	}
+
 	/**
 	 * 
 	 * @return - returns the value of this.playerRank for Server.java to use

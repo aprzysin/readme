@@ -18,12 +18,14 @@ public class Server {
 	 * @param filePath
 	 *            - the path to the file that is being read (src/blackops in
 	 *            this case)
-	 * @throws FileNotFoundException - makes the program not crash if a file is not found
+	 * @throws FileNotFoundException
+	 *             - makes the program not crash if a file is not found
 	 */
 	public void load(String filePath) throws FileNotFoundException {
 		// adds the file path into the file array
 		this.file = new File(filePath);
-		// makes the datas array to have the same amount of array values as the amount of lines in blackops
+		// makes the datas array to have the same amount of array values as the
+		// amount of lines in blackops
 		this.datas = new Data[this.numLines()];
 		// scanner for reading the file info
 		Scanner fileReader = new Scanner(this.file);
@@ -31,10 +33,10 @@ public class Server {
 		int i = 0;
 		// reads all the lines and puts them into the datas array
 		while (fileReader.hasNext()) {
-		// reads one line and adds it to the datas array
+			// reads one line and adds it to the datas array
 			this.datas[i] = new Data(fileReader.nextDouble(),
 					fileReader.nextDouble());
-		// adds one to i to switch the array value
+			// adds one to i to switch the array value
 			i++;
 		}
 	}
@@ -47,7 +49,7 @@ public class Server {
 	private int numLines() throws FileNotFoundException {
 		// scanner for reading the file info
 		Scanner lineReader = new Scanner(this.file);
-		// varible that represents the amount of lines in blackops 
+		// varible that represents the amount of lines in blackops
 		int lines = 0;
 		// determines the amount of lines in blackops
 		while (lineReader.hasNextLine()) {
@@ -58,6 +60,7 @@ public class Server {
 		}
 		return lines;
 	}
+
 	// variable that represents all the scores added up
 	double totalScore = 0.0;
 	// variable that represents all the ranks added up
@@ -65,10 +68,12 @@ public class Server {
 
 	/**
 	 * 
-	 * @throws FileNotFoundException - makes the program not crash if a file is not found
+	 * @throws FileNotFoundException
+	 *             - makes the program not crash if a file is not found
 	 */
 	public void analyze() throws FileNotFoundException {
-		// adds all the variable values up in the datas array and equals this value to a more universal variables
+		// adds all the variable values up in the datas array and equals this
+		// value to a more universal variables
 		for (Data d : datas) {
 			// adds one of the datas array values for playerScore to totalScore
 			totalScore += d.playerScore();
