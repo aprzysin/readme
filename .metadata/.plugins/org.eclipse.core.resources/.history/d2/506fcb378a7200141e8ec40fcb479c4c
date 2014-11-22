@@ -3,7 +3,7 @@ import org.powerbot.script.rt6.ClientContext;
 
 // @see http://www.powerbot.org/community/topic/1182786-the-rsbot-cookbook-writing-your-first-script-using-tasks/
 // Organizes and runs the tasks
-public abstract class Task extends ClientAccessor {
+public abstract class Task<C extends ClientContext> extends ClientAccessor {
 	// gets the api methods for Task
 	public Task(ClientContext ctx) {
         super(ctx);
