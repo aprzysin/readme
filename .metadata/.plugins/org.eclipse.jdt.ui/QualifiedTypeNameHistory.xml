@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="org.powerbot.script.PollingScript"/>
+<fullyQualifiedTypeName name="org.powerbot.script.Script.Manifest"/>
+</qualifiedTypeNameHistroy>

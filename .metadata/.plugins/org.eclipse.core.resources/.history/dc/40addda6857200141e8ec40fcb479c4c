@@ -1,0 +1,24 @@
+import org.powerbot.script.rt6.ClientContext;
+
+
+
+	public abstract class Drop extends Task<ClientContext> {
+		// gets the api methods for EatFood
+		public EatFood(ClientContext ctx) {
+	        super(ctx);
+		}
+		@Overide
+		// checks for initial conditions to be able kill the rat
+		public boolean activate() {
+			// checks to see if there is a lvl 1 rat
+			return !ctx.objects.select().id(315).isEmpty()
+					&&
+			// checks to see if my character is doing nothing
+			ctx.players.local().animation() == -1;
+		}
+		@Overide
+	    public void execute() {
+			
+			
+		}
+	}

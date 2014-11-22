@@ -1,0 +1,20 @@
+
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		mapIntSystem(10);
+	}
+	public static void mapIntSystem(int x) {
+		if (x >= 1) {
+
+			mapIntSystem(x - 1);
+			System.out.print(x + " ");
+		}
+		else { 
+			
+		}
+
+
+
+	}
+}

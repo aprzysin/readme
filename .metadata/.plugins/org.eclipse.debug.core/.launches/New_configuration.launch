@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/RuneScape Bot"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.powerbot.Boot"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-debug"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RuneScape Bot"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xss6m -Xmx2048m -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -XX:+UseCodeCacheFlushing -XX:-UseSplitVerifier -XX:+UseConcMarkSweepGC"/>
+</launchConfiguration>

@@ -1,0 +1,26 @@
+import org.powerbot.script.PollingScript;
+import org.powerbot.script.Script;
+import org.powerbot.script.rt6.*; //RS3
+//For OSRS, change "rt6" to "rt4".
+
+@Script.Manifest(name="Rat Killer", description="Kills Rats and gets and eats food")
+public class Main extends PollingScript<ClientContext> {
+	// contains the jobs
+	private Tree container = null;
+public void start() {
+//Things that run as soon as the script begins.
+}
+@Override
+public void poll() {
+
+	// if container is not in null then create a new job
+	System.out.println("hi");
+	}
+//Things that begin to run after start() ends.
+//Keeps performing the code inside of this until stopped.
+//Only runs when the player is logged in to a world.
+
+public void stop() {
+//Things that run when ctx.controller.stop(); is called.
+}
+}

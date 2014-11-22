@@ -1,0 +1,11 @@
+ // http://www.powerbot.org/community/topic/1182786-the-rsbot-cookbook-writing-your-first-script-using-tasks/
+public class RatKiller extends PollingScript<ClientContext> {
+	@Override
+	public void start() {
+		
+	}
+	@Override
+	public void poll(){
+		
+	}
+}

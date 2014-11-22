@@ -1,0 +1,21 @@
+
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		mapIntSystem(x);
+	}
+	public static void mapIntSystem(int x) {
+		int	numLine = 0;
+		int i = 0;
+		if (x > 1) {
+
+			mapIntSystem(x - 1);
+		}
+		else { 
+			mapIntSystem(x + 1);
+		}
+
+
+
+	}
+}
