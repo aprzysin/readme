@@ -13,17 +13,17 @@ import org.powerbot.script.rt6.*; //RS3
 
 @Script.Manifest(name="Rat Killer", description="Kills Rats and gets and eats food")
 public class Main extends PollingScript<ClientContext> {
-	private List<Task> taskList = new ArrayList<Task>();
+	private List<Duty> dutyList = new ArrayList<Duty>();
 	//Things that run as soon as the script begins.
 public void start() {
-	taskList.addAll(Arrays.asList(new KillRat(ctx), new Drop(ctx)));
+	dutyList.addAll(Arrays.asList(new KillRat(ctx), new BurntDrop(ctx), new LumbridgeBank(ctx)));
 	
 }
 @Override
 public void poll() {
-	for (Task task : taskList) {
-        if (task.activate()) {
-            task.execute();
+	for (Duty duty : dutyList) {
+        if (duty.activate()) {
+            duty.execute();
         }
     }
 	

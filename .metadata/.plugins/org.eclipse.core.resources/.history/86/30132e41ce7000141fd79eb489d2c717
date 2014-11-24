@@ -1,8 +1,0 @@
-import org.powerbot.script.PollingScript;
-
-
-@Manifest(authors = { "Pigy33" }, name = "Rat Killer")
-public class Main extends PollingScript {
-
-}
-	
