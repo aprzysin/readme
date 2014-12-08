@@ -13,4 +13,6 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.powerbot.script.ClientAccessor"/>
 <fullyQualifiedTypeName name="org.powerbot.script.rt6.Bank"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Callable"/>
+<fullyQualifiedTypeName name="org.powerbot.script.Condition"/>
 </qualifiedTypeNameHistroy>

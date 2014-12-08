@@ -1,0 +1,51 @@
+import org.powerbot.script.rt6.ClientContext;
+import org.powerbot.script.rt6.GameObject;
+import org.powerbot.script.rt6.Item;
+import org.powerbot.script.rt6.Npc;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * kills lvl 1 rats
+ * 
+ * @author Andrew Przysinda
+ *
+ */
+public class Eater extends Duty<ClientContext> {
+	// used to recognize the food in the backpack
+	private int food = 315;
+	// gets the api methods for KillRat
+	public Eater(ClientContext ctx) {
+        super(ctx);
+	}
+	@Overide
+	/**
+	 * checks for initial conditions to be able kill the rat
+	 */
+	public boolean activate() {
+		// checks to see if there is a lvl 1 rat
+		return !ctx.npcs.select().id(47).isEmpty()
+				&&
+		// checks to see if my character is doing nothing
+		ctx.players.local().healthPercent() <= 90
+				&&
+		// prevents this duty when there is no food
+		ctx.backpack.select().id(food).count() > 0;
+	}
+	@Overide
+	/**
+	 * executes the programs if the initial conditions are met
+	 * 
+	 * @see https://www.powerbot.org/community/topic/1231541-how-to-stop-multiple-eatings-and-long-pauses/
+	 */
+    public void execute() {
+		Item edible= ctx.backpack.select().id(food).poll();
+		ctx.backpack.scroll(edible);
+	    edible.interact("Eat");
+	}
+		}
+	
+    
+
+
