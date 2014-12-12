@@ -15,13 +15,19 @@ import org.powerbot.script.rt6.Npc;
 public class LumbridgeBank extends Duty<ClientContext> {
 	// used to recognize the food in the backpack
 	private int food = 315;
-	// gets the api methods for LumbridgeBank
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public LumbridgeBank(ClientContext ctx) {
         super(ctx);
 	}
 	@Overide
 	/**
 	 * checks for initial conditions to be able to go to the bank
+	 * 
+	 * @return food in the backpack, animation state of character
 	 */
 	public boolean activate() {
 		// checks to see if there is food in the backpack

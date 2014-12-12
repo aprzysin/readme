@@ -16,7 +16,11 @@ public class Eater extends Duty<ClientContext> {
 	// used to represent the players health percent for determining when to eat
 	private double percent;
 
-	// gets the api methods for KillRat
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public Eater(ClientContext ctx) {
 		super(ctx);
 	}
@@ -26,6 +30,8 @@ public class Eater extends Duty<ClientContext> {
 	 * checks for initial conditions to be able to eat the food
 	 * 
 	 * @see http://www.powerbot.org/community/topic/1232790-healthpercent-doesnt-work-for-rs6/
+	 * 
+	 * @return returns the players health, if the player is alive and has food in the backpack
 	 */
 	public boolean activate() {
 		// makes the percent variable an actual percent of the players HP

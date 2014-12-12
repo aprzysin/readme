@@ -15,13 +15,19 @@ import org.powerbot.script.rt6.Npc;
 public class LumbridgeRats extends Duty<ClientContext> {
 	// used to recognize the food in the backpack
 	private int food = 315;
-	// gets the api methods for LumbridgeRats
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public LumbridgeRats(ClientContext ctx) {
         super(ctx);
 	}
 	@Overide
 	/**
 	 * checks for initial conditions to be able to return to the rats
+	 * 
+	 * @return amount of food in backpack, if the rat level is not on the map
 	 */
 	public boolean activate() {
 		// checks to see if there is food in the backpack

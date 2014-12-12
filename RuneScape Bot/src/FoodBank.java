@@ -14,13 +14,19 @@ import java.util.List;
 public class FoodBank extends Duty<ClientContext> {
 	// used to recognize the food in the backpack
 	private int food = 315;
-	// gets the api methods for FoodBank
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public FoodBank(ClientContext ctx) {
         super(ctx);
 	}
 	@Overide
 	/**
 	 * checks for initial conditions to be able kill the rat
+	 * 
+	 * @return how much food is in the backpack
 	 */
 	public boolean activate() {
 		// checks to see if there is a bank

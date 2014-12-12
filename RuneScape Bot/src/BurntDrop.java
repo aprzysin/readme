@@ -12,12 +12,19 @@ public class BurntDrop extends Duty<ClientContext> {
 	// holds the Ids of the burnt fish to drop
 	private String[] burntFish = {"Burnt fish", "Burnt Shrimp"};
 	// gets the api methods for BurntDrop
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public BurntDrop(ClientContext ctx) {
         super(ctx);
 	}
 	@Overide
 	/**
 	 * checks for initial conditions to be able to drop the food
+	 * 
+	 * @return returns the characters animation state
 	 */
 	public boolean activate() {
 		// checks to see if there is/were (a) burnt fish

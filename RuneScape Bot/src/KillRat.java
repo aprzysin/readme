@@ -13,13 +13,19 @@ import java.util.List;
 public class KillRat extends Duty<ClientContext> {
 	// used to recognize the food in the backpack
 	private int food = 315;
-	// gets the api methods for KillRat
+	/**
+	 * Constructor function. Sets up initial state.
+	 * 
+	 * @param ctx gets the API methods
+	 */
 	public KillRat(ClientContext ctx) {
         super(ctx);
 	}
 	@Overide
 	/**
 	 * checks for initial conditions to be able kill the rat
+	 * 
+	 * @return if there is a/are rat(s) on the map, character animation state, if there is food in backpack
 	 */
 	public boolean activate() {
 		// checks to see if there is a lvl 1 rat
