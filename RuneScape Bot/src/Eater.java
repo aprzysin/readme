@@ -19,7 +19,8 @@ public class Eater extends Duty<ClientContext> {
 	/**
 	 * Constructor function. Sets up initial state.
 	 * 
-	 * @param ctx gets the API methods
+	 * @param ctx
+	 *            gets the API methods
 	 */
 	public Eater(ClientContext ctx) {
 		super(ctx);
@@ -31,7 +32,7 @@ public class Eater extends Duty<ClientContext> {
 	 * 
 	 * @see http://www.powerbot.org/community/topic/1232790-healthpercent-doesnt-work-for-rs6/
 	 * 
-	 * @return returns the players health, if the player is alive and has food in the backpack
+	 * @return true if players health is at or below 99%, player is alive, food in backpack
 	 */
 	public boolean activate() {
 		// makes the percent variable an actual percent of the players HP

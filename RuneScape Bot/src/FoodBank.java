@@ -1,8 +1,5 @@
 import org.powerbot.script.rt6.ClientContext;
 import org.powerbot.script.rt6.GameObject;
-import org.powerbot.script.rt6.Npc;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * gets food from the bank
@@ -14,33 +11,37 @@ import java.util.List;
 public class FoodBank extends Duty<ClientContext> {
 	// used to recognize the food in the backpack
 	private int food = 315;
+
 	/**
 	 * Constructor function. Sets up initial state.
 	 * 
-	 * @param ctx gets the API methods
+	 * @param ctx
+	 *            gets the API methods
 	 */
 	public FoodBank(ClientContext ctx) {
-        super(ctx);
+		super(ctx);
 	}
+
 	@Overide
 	/**
 	 * checks for initial conditions to be able kill the rat
 	 * 
-	 * @return how much food is in the backpack
+	 * @return true if there is a bank on the map, no food in the backpack
 	 */
 	public boolean activate() {
 		// checks to see if there is a bank
-		return 	!ctx.objects.select().id(36786).isEmpty()
-				&&
-				// checks to see if there is no food in the backpack
+		return !ctx.objects.select().id(36786).isEmpty() &&
+		// checks to see if there is no food in the backpack
 				ctx.backpack.select().id(food).count() == 0;
 	}
+
 	@Overide
 	/**
 	 * executes the programs if the initial conditions are met
 	 */
-    public void execute() {
-		// used for getting food from and confirming the local player is in the right location
+	public void execute() {
+		// used for getting food from and confirming the local player is in the
+		// right location
 		GameObject bank = ctx.objects.select().id(36786).nearest().poll();
 		// moves to, turns to and opens the bank
 		if (bank.inViewport()) {
@@ -51,17 +52,17 @@ public class FoodBank extends Duty<ClientContext> {
 			// opens the bank
 			ctx.bank.open();
 			// brings up the deposit window
-			if(ctx.bank.open()) {
+			if (ctx.bank.open()) {
 				ctx.bank.depositInventory();
 				// withdraws 28 food
-				if(ctx.bank.depositInventory()) {
+				if (ctx.bank.depositInventory()) {
 					// withdraw by the id then the amount
 					ctx.bank.withdraw(food, 28);
 					// closes the bank
-					if(ctx.backpack.select().id(food).count() == 28) {
-					// close it
+					if (ctx.backpack.select().id(food).count() == 28) {
+						// close it
 						ctx.bank.close();
-						
+
 					}
 				}
 			}
@@ -71,14 +72,7 @@ public class FoodBank extends Duty<ClientContext> {
 			ctx.movement.step(ctx.bank.nearest());
 			// turns to the bank
 			ctx.camera.turnTo(ctx.bank.nearest());
-		
-		
-		
-		
-		
-		}
+
 		}
 	}
-    
-
-
+}

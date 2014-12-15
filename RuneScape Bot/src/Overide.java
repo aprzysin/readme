@@ -1,5 +1,6 @@
 /**
- * Helps throughout the program to solve problems with conflicting parts of the program
+ * Helps throughout the program to solve problems with conflicting parts of the
+ * program
  * 
  * @author Andrew
  * 
