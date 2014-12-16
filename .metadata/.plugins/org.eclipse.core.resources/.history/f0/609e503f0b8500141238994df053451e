@@ -56,9 +56,9 @@ public class FoodBank extends Duty<ClientContext> {
 				ctx.bank.depositInventory();
 				// withdraws 28 food
 				if (ctx.bank.depositInventory()) {
-					// withdraws 28 food
+					// withdraw by the id then the amount
 					ctx.bank.withdraw(food, 28);
-					// closes the bank once the food is withdrawn
+					// closes the bank
 					if (ctx.backpack.select().id(food).count() == 28) {
 						// close it
 						ctx.bank.close();
